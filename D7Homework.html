@@ -14,6 +14,10 @@
 
         <h1>Mobile Takeaway</h1>
 
+        <input type="button" value="Change H1" onclick="changeH1()"/>
+        <input type="button" value="page Colour" onclick="pageColour()"/>
+        <input type="button" value="new Address" onclick="changeAddress()"/>
+
         <h2>Top 5 products we have:</h2>
         <ul>
             <li><a href="https://amzn.to/3vkzFQx">Apple</a></li>
@@ -77,13 +81,27 @@
                 <br>County Donegal,
                 <br>Ireland.
         </footer>
-        
 
+        <script>
 
+            function changeH1(){
+                let newH1 = document.querySelector("h1")
+                newH1.innerText = "Something"
+            }
+
+            function pageColour(){
+                let pageColor = document.querySelector("body")
+                pageColor.style.backgroundColor = "green"
+            }
+
+            function changeAddress(){
+                let newAddress = document.querySelector("footer")
+                newAddress.innerHTML = "Mobile Takeaway, <br>Main st Ballinrobe, <br>Ballinrobe,<br> County Mayo, <br>Ireland"
+            }
+            
+            </script>
 
     </body>
-
-
 
 
 
