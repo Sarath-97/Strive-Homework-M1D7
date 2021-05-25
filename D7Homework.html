@@ -2,106 +2,112 @@
 
 <html lang="en">
 
-    <head>
+<head>
 
-        <title>Smartphone Phone</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="#"> 
-    
-    </head>
+    <title>Smartphone Phone</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="#">
 
-    <body>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
 
-        <h1>Mobile Takeaway</h1>
+        img {
+            width: 180px;
+            height: 200px;
+        }
+    </style>
+</head>
 
-        <input type="button" value="Change H1" onclick="changeH1()"/>
-        <input type="button" value="page Colour" onclick="pageColour()"/>
-        <input type="button" value="new Address" onclick="changeAddress()"/>
+<body>
 
-        <h2>Top 5 products we have:</h2>
-        <ul>
-            <li><a href="https://amzn.to/3vkzFQx">Apple</a></li>
-            <li><a href="https://amzn.to/3wy4mSA">Samsung</a></li>
-            <li><a href="https://amzn.to/3yEfW0w">Huawei</a></li>
-            <li><a href="https://amzn.to/3bSX6ce">OnePlus</a></li>
-            <li><a href="https://amzn.to/3wBHh1B">Xiaomi</a></li>
-        </ul>
+    <h1>Mobile Takeaway</h1>
 
-        <div id="iPhone">
-            <h3>Model: Apple iPhone 12 Pro Max</h3>
-            <img src="https://bit.ly/2Son68n" alt="Apple iPhone 12 Pro Max">
-            <h3>Price: £1,090.50</h3>
+    <input type="button" value="Change H1" onclick="changeH1()" />
+    <input type="button" value="page Colour" onclick="pageColour()" />
+    <input type="button" value="new Address" onclick="changeAddress()" />
 
-
-        </div>
-
-        <div id="Samsung">
-            <h3>Model: Samsung Galaxy S20</h3>
-            <img src="https://bit.ly/3yvCZKK" alt="Samsung Galaxy S20">
-            <h3>Price: £590.99</h3>
-
-
-        </div>
-
-        <div id="Huawei">
-            <h3>Model: HUAWEI Mate X2</h3>
-            <img src="https://bit.ly/2TjxJtF" alt="HUAWEI Mate X2">
-            <h3>Price: £1,109.00</h3>
-
-
-        </div>
-
-        <div id="OnePlus">
-            <h3>Model: OnePlus N10</h3>
-            <img src="https://bit.ly/2RMzjUv" width="550" height="500" alt = "OnePlus">
-            <h3>Price: £329.00</h3>
-
-
-        </div>
-
-        <div id="Xiaomi">
-            <h3>Model: Xiaomi Mi 11 5G</h3>
-            <img src="https://bit.ly/3fiQ7eT" width="550" height="550" alt="Xiaomi">
-            <h3>Price: £599.99</h3>
+    <table style="width:100%">
+        <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td><img src="https://bit.ly/2Son68n" alt="Apple iPhone 12 Pro Max"></td>
+            <td><a href="https://amzn.to/3vkzFQx">Iphone 12 Pro Max</a></td>
+            <td>erfgregergerg</td>
+            <td>£1,090.50</td>
+        </tr>
+        <tr>
+            <td><img src="https://bit.ly/3yvCZKK" alt="Samsung Galaxy S20"></td>
+            <td><a href="https://amzn.to/3vkzFQx">Samsung Galaxy S20</a></td>
+            <td>ebrtebterbtrebter</td>
+            <td>£590.99</td>
+        </tr>
+        <tr>
+            <td><img src="https://bit.ly/2TjxJtF" alt="HUAWEI Mate X2"></td>
+            <td><a href="https://amzn.to/3yEfW0w">HUAWEI Mate X2</a></td>
+            <td>hgertytberbtyertb</td>
+            <td>£1,109.00</td>
+        </tr>
+        <tr>
+            <td><img src="https://bit.ly/2RMzjUv" width="550" height="500" alt="OnePlus"></td>
+            <td><a href="https://amzn.to/3bSX6ce">OnePlus</a></td>
+            <td>hgertytberbtyertb</td>
+            <td>£329.00</td>
+        </tr>
+        <tr>
+            <td><img src="https://bit.ly/3fiQ7eT" width="550" height="550" alt="Xiaomi mi 11 5G">
+            <td><a href="https://amzn.to/3wBHh1B">Xiaomi mi 11 5G</a></td>
+            <td>hgertytberbtyertb</td>
+            <td>£599.99</td>
+        </tr>
+    </table>
 
 
-        </div>
+    </tr>
 
-        <form>
-            <textarea rows="10" cols="50"></textarea>
-            <br>
-            <input type="submit">
-          </form>
-          <br>
-            
 
-        <footer>
-                Mobile Takeaway,
-                <br>Chapel St Stranorlar,
-                <br>County Donegal,
-                <br>Ireland.
-        </footer>
+    <form>
+        <textarea rows="10" cols="50"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+    <br>
 
-        <script>
 
-            function changeH1(){
-                let newH1 = document.querySelector("h1")
-                newH1.innerText = "Something"
-            }
+    <footer>
+        Mobile Takeaway,
+        <br>Chapel St Stranorlar,
+        <br>County Donegal,
+        <br>Ireland.
+    </footer>
 
-            function pageColour(){
-                let pageColor = document.querySelector("body")
-                pageColor.style.backgroundColor = "green"
-            }
+    <script>
+        function changeH1() {
+            let newH1 = document.querySelector("h1")
+            newH1.innerText = "Something"
+        }
 
-            function changeAddress(){
-                let newAddress = document.querySelector("footer")
-                newAddress.innerHTML = "Mobile Takeaway, <br>Main st Ballinrobe, <br>Ballinrobe,<br> County Mayo, <br>Ireland"
-            }
-            
-            </script>
+        function pageColour() {
+            let pageColor = document.querySelector("body")
+            pageColor.style.backgroundColor = "green"
+        }
 
-    </body>
+        function changeAddress() {
+            let newAddress = document.querySelector("footer")
+            newAddress.innerHTML =
+                "Mobile Takeaway, <br>Main st Ballinrobe, <br>Ballinrobe,<br> County Mayo, <br>Ireland"
+        }
+    </script>
+
+</body>
 
 
 
