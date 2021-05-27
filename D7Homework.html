@@ -30,6 +30,7 @@
     <input type="button" value="Change H1" onclick="changeH1()" />
     <input type="button" value="page Colour" onclick="pageColour()" />
     <input type="button" value="new Address" onclick="changeAddress()" />
+    <input type="button" value="toggle images" onclick="toggleImage()" />
 
     <table style="width:100%">
         <tr>
@@ -93,6 +94,7 @@
         function changeH1() {
             let newH1 = document.querySelector("h1")
             newH1.innerText = "Something"
+
         }
 
         function pageColour() {
@@ -104,6 +106,34 @@
             let newAddress = document.querySelector("footer")
             newAddress.innerHTML =
                 "Mobile Takeaway, <br>Main st Ballinrobe, <br>Ballinrobe,<br> County Mayo, <br>Ireland"
+        }
+
+        function addLinks() {
+            for (let csslink of document.querySelectorAll("a")) {
+                csslink.classList.add("links")
+            }
+        }
+
+        function toggleImage() {
+            for (let hideImage of document.querySelectorAll("img")) {
+                hideImage.classList.toggle("hidden")
+            }
+        }
+
+        function setRandomColor() {
+            const color = getRandomColor();
+
+            for (let price of document.querySelectorAll("tr > td:nth-child(4)")) {
+                price.style.color = color;
+            }
+        }
+
+        function getRandomColor() {
+            const red = Math.round(Math.random() * 255);
+            const green = Math.round(Math.random() * 255);
+            const blue = Math.round(Math.random() * 255);
+
+            return "rgb(" + red + ", " + green + ", " + blue + ")";
         }
     </script>
 
